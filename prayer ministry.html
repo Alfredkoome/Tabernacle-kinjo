@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gospel tabernacle church kinjo</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #e5e5e8; /* Cream background from the screenshot */
+            color: #eae7f1;
+            background-color: #e5e5e8;
+            background-size: cover;
+        }
+
+        /* HEADER */
+        .header-container {
+            position:relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 30px;
+            background: #4a2384;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            object-fit: contain;
+        }
+
+        .title-group h1 {
+            margin: 0;
+            font-size: 25px;
+            color: #e35252; /* Coral red color */
+            text-transform: uppercase;
+            letter-spacing: 1.0px;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        .title-group p {
+            margin: 2px 0 0 0;
+            font-size: 11px;
+            font-style: italic;
+            color: #111111;
+            font-weight: 600;
+        }
+
+        /* Menu button */
+        .menu-btn{
+            font-size:30px;
+            cursor:pointer;
+        
+        }
+
+        /* Hidden menu */
+        .menu{
+            display:none;
+
+            position:absolute;
+            top:60px;
+            right:20px;
+
+            background:rgb(238, 231, 231);
+            width:220;
+            height:auto;
+
+            box-shadow:0 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        /* Menu links */
+        .menu a{
+            display:block;
+            padding:15px;
+
+            text-decoration:none;
+            color:black;
+
+            border-bottom:2px solid #ddd;
+            
+        }
+
+        .menu a:hover{
+            background:#f2f2f2;
+        }
+        .close-btn{
+            text-align: right;
+            padding: 15px;
+            text-decoration: none;
+            color: #111111;
+            border-bottom: 1px solid #ddd;
+        }
+         .ministry-image{
+            background-image: url("prayer.jpeg");
+            background-size: cover;
+            background-position: center;
+            
+            height:900px;
+        }
+        .section{
+            text-align: center;
+            background-image: url("taylor-van-riper-yQorCngxzwI-unsplash.jpg");  
+            margin:0;
+        }
+        .section h2{
+            font-size: 80px;
+            color:#111111;
+            padding: 7px;
+            
+        }
+        .section p{
+            font-size: 20px;
+            color: black;
+            list-style: 1.8;
+            margin-bottom: 25%;
+            text-align: justify;
+
+        }
+          /* FOOTER */
+.footer{
+    background:#2c1654;
+    color:#ffffff;
+    text-align:center;
+    padding:50px 20px;
+    margin-top:60px;
+}
+
+.footer h3{
+    margin:0;
+    font-size:28px;
+    color:#ffd700; /* Gold */
+}
+
+.footer p{
+    margin:10px 0;
+    color:#f5f5f5;
+}
+
+.footer-links,
+.social-links{
+    margin:20px 0;
+}
+
+.footer-links a,
+.social-links a{
+    color:#ffffff;
+    text-decoration:none;
+    margin:0 12px;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.footer-links a:hover,
+.social-links a:hover{
+    color:#ffd700;
+}
+
+.footer-contact{
+    margin:20px 0;
+    line-height:1.8;
+}
+
+.copyright{
+    margin-top:30px;
+    font-size:14px;
+    color:#d9d9d9;
+    border-top:1px solid rgba(255,255,255,0.3);
+    padding-top:15px;
+}
+.footer{
+    background:#2c1654;
+    color:#ffffff;
+    text-align:center;
+    padding:25px 15px;
+    margin-top:60px;}
+    
+    </style>
+</head>
+
+<body>
+
+    <header class="header-container">
+        <div class="header-left">
+            <img src="C:\Users\USER\.vscode\extensions\church project\IMG-20260519-WA0019.jpg" class="logo" alt="GTC Logo">
+            <div class="title-group">
+        
+                <h1>Gospel<br>Tabernacle<br>Church-Kinjo</h1>
+                <p>Christ in you the hope of Groly</p>
+            </div>
+            </div>
+        </div>
+ <!-- Menu Icon -->
+        <div class="menu-btn" onclick="openMenu()">
+            &#9776;
+        </div>
+
+    <!-- Hidden Links -->
+    <div class="menu" id="menu">
+        <div class="close-btn" onclick="closeMenu()">&times</div>
+         
+        <a href="C:\Users\USER\.vscode\extensions\church project\kinjo.html">Home</a>
+        <a href="C:\Users\USER\.vscode\see more.html">About</a>
+        <a href="C:\Users\USER\.vscode\extensions\church project\ministries.html">Ministry</a>
+        <a href="C:\Users\USER\.vscode\visit us.html">Vist us</a>
+        <a href="#">Give</a>
+       
+
+    </div>
+</header>
+    <script>
+
+        function openMenu(){
+
+            document.getElementById("menu").style.display="block";
+        }
+
+           function closeMenu() {
+            document.getElementById("menu").style.display="none";
+           }
+    </script>
+</header>
+<div class="ministry-image">
+</div>
+<div class="section">
+    <h2>Prayer Ministry</h2>
+    <p>
+
+The Prayer Ministry is the spiritual backbone of our church, dedicated to seeking God's presence through prayer, intercession, and worship. We believe that prayer is essential to the life of every believer and the growth of the church. Through prayer, we bring our needs before God, stand in the gap for others, and seek His guidance in all that we do.
+
+<br><br>
+
+The prayer intercessors meet every Thursday evening at the church for a special time of prayer, worship, and intercession. During these gatherings, members pray for the church, families, leaders, the community, and various needs presented by believers. These meetings provide an opportunity to grow spiritually and strengthen one another in faith.
+
+<br><br>
+
+In addition to the weekly intercessory meetings, daily prayer services are held at the church every morning at 5:00 AM. These early morning prayers bring believers together to seek God's direction, give thanks, and commit each day into His hands. Through consistent prayer, we experience God's power, peace, and faithfulness in our lives.
+
+<br><br>
+
+Our vision is to cultivate a church that is rooted in prayer, dependent on God, and passionate about interceding for others. We desire to see lives transformed, faith strengthened, and God's will accomplished through the power of prayer. We welcome all who desire to grow in their prayer life and join us as we seek the Lord together.</p>
+  >
+</div>
+</body>
+<footer class="footer">
+    <div class="footer-content">
+
+        <h3>Gospel Tabernacle Church - Kinjo</h3>
+        <p>Christ in You, the Hope of Glory</p>
+
+        <div class="footer-links">
+            <a href="kinjo.html">Home</a>
+            <a href="see more.html">About Us</a>
+            <a href="ministries.html">Ministries</a>
+            <a href="visit us.html">Visit Us</a>
+        </div>
+
+        <div class="footer-contact">
+            <p>📍 Kinjo, Kenya</p>
+           <p>📞 +254 711146698</p>
+            <p>✉️ isaackaimenyi@gmail.com</p>
+        </div>
+
+        <p class="copyright">
+            © 2026 Gospel Tabernacle Church - Kinjo. All Rights Reserved.
+        </p>
+
+    </div>
+</footer>
+</html>

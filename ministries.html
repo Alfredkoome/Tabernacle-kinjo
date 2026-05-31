@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gospel <br>tabernacle <br>church kinjo</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #e5e5e8; /* Cream background from the screenshot */
+            color: #eae7f1;
+        }
+               .header-container {
+            position:relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 30px;
+            background: #4a2384;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            object-fit: contain;
+        }
+
+        .title-group h1 {
+            margin: 0;
+            font-size: 25px;
+            color: #e35252; /* Coral red color */
+            text-transform: uppercase;
+            letter-spacing: 1.0px;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        .title-group p {
+            margin: 2px 0 0 0;
+            font-size: 11px;
+            font-style: italic;
+            color: #111111;
+            font-weight: 600;
+        }
+
+        /* Menu button */
+        .menu-btn{
+            font-size:30px;
+            cursor:pointer;
+        
+        }
+
+        /* Hidden menu */
+        .menu{
+            display:none;
+
+            position:absolute;
+            top:60px;
+            right:20px;
+
+            background:rgb(238, 231, 231);
+            width:220;
+            height:auto;
+
+            box-shadow:0 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        /* Menu links */
+        .menu a{
+            display:block;
+            padding:15px;
+
+            text-decoration:none;
+            color:black;
+
+            border-bottom:2px solid #ddd;
+            
+        }
+
+        .menu a:hover{
+            background:#f2f2f2;
+        }
+        .close-btn{
+            text-align: right;
+            padding: 15px;
+            text-decoration: none;
+            color: #111111;
+            border-bottom: 1px solid #ddd;
+        }
+        .tittle{
+            background: #801a1a;
+            color: #e5e5e8;
+            text-align: center;
+            padding:30px 20px;
+        }
+        .title h2{
+            font-size: 100px;
+            color: burlywood;
+        
+            padding: 70px;
+
+        }
+
+        .ministry-image{
+            background-image: url("sincerely-media-dGxOgeXAXm8-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            
+            height:500px;
+        }
+        .children-image{
+            background-image: url("ben-white-4K2lIP0zc_k-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            
+            height:500px;
+        }
+        .women-image{
+            background-image: url("women.jpeg");
+            background-size: cover;
+            background-position: center;
+            
+            height:500px;
+
+        }
+        .mission-image{
+            background-image: url("kyle-glenn-nXt5HtLmlgE-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            height:500px;
+        }
+        .youths-image{
+            background-image: url("matt-botsford-bBNabN9R_ac-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            
+            height:500px;
+
+        }
+        .men-image{
+            background-image: url("john-price-RAZQiZOX3mU-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            
+            height:500px;
+
+        }
+        .prayer-image{
+            background-image: url("prayer.jpeg");
+            background-size: cover;
+            background-position: center;
+            
+            height:500px;
+
+        }
+        .card{
+            background:white;
+            width:50%;
+            margin: auto;
+            margin-top: -80px;
+            padding:30px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .card h3{
+            color: #541dc3;
+            font-size: 55px;
+            margin-bottom: 20px;
+            padding:5px;
+
+        }
+        .card p{
+            font-size:30px;
+            line-height:35px;
+            color:#6d6d3d;
+        }
+        .line{
+            width:400px;
+            height:4px;
+            background: #1e1b1b;
+            margin: auto;
+            
+        }
+        .visit-btn{
+            color: aquamarine;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            padding-bottom:5px;
+        }
+               /* FOOTER */
+.footer{
+    background:#2c1654;
+    color:#ffffff;
+    text-align:center;
+    padding:25px 15px;
+    margin-top:opx;
+
+}
+
+.footer h3{
+    margin:0;
+    font-size:28px;
+    color:#ffd700; /* Gold */
+}
+
+.footer p{
+    margin:10px 0;
+    color:#f5f5f5;
+}
+
+.footer-links,
+.social-links{
+    margin:20px 0;
+}
+
+.footer-links a,
+.social-links a{
+    color:#ffffff;
+    text-decoration:none;
+    margin:0 12px;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.footer-links a:hover,
+.social-links a:hover{
+    color:#ffd700;
+}
+
+.footer-contact{
+    margin:20px 0;
+    line-height:1.8;
+}
+
+.copyright{
+    margin-top:30px;
+    font-size:14px;
+    color:#d9d9d9;
+    border-top:1px solid rgba(255,255,255,0.3);
+    padding-top:15px;
+}
+
+        </style>
+    </head>
+    <header class="header-container">
+        <div class="header-left">
+            <img src="C:\Users\USER\.vscode\extensions\church project\IMG-20260519-WA0019.jpg" class="logo" alt="GTC Logo">
+            <div class="title-group">
+        
+                <h1>Gospel Tabernacle Church-Kinjo</h1>
+                <p>Christ in you the hope of Groly</p>
+            </div>
+            </div>
+        </div>
+ <!-- Menu Icon -->
+        <div class="menu-btn" onclick="openMenu()">
+            &#9776;
+        </div>
+
+    <!-- Hidden Links -->
+    <div class="menu" id="menu">
+        <div class="close-btn" onclick="closeMenu()">&times</div>
+         
+        <a href="C:\Users\USER\.vscode\extensions\church project\kinjo.html">Home</a>
+        <a href="C:\Users\USER\.vscode\see more.html">About</a>
+        <a href="C:\Users\USER\.vscode\extensions\church project\ministries.html">Ministry</a>
+        <a href="C:\Users\USER\.vscode\visit us.html">Vist us</a>
+        <a href="#">Give</a>
+        </header>
+        <script>
+
+        function openMenu(){
+
+            document.getElementById("menu").style.display="block";
+        }
+
+           function closeMenu() {
+            document.getElementById("menu").style.display="none";
+           }
+    </script>
+
+    </div>
+</div>
+            <body>
+       <section class="tittle">
+    <h2 style="font-size: 60px;color:white;">Ministry</h2>
+    <div class="ministry-image"></div>
+    <div class="card">
+        <h3>Sunday Morning <br>Service</h3>
+        <p>We meet on Sunday morning from <br>9am-10am
+            at church.We enjoy contemporary <br>worship,sound biblical
+            preaching.
+            <br>
+            <hr class="line">
+        </p>
+        
+        
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+       <div class="children-image" ></div>
+       <div class="card">
+        <h3>Children's Ministry</h3>
+        <p>We warmly welcome children ages 3 to 12 during <br>
+            our Sunday morning services,from 8:30am -10:00am.Our goal is to <br>teach them the
+            love and ways of God in a safe,caring,and joyful environment where <br>
+            they can grow spiritually and<br> build a strong foundation of faith
+            <br>
+            <hr class="line">
+        </p>
+        <div class="visit-btn"><a href="C:\Users\USER\.vscode\extensions\church project\children ministry.html">Learn more></a></div>
+       </div>
+    <br>
+    <br>
+    <br>
+    <br>
+       <div class="youths-image" ></div>
+       <div class="card">
+        <h3>Youth & Young <br>Adults</h3>
+        <p>The youth and young aldults ministry is<br>
+            designed to help those in this age groups<br>
+            find a place to be discipled to be more like<br>
+            christ and glow in community
+        
+            <hr class="line">
+        </p>
+        <div class="visit-btn"><a href="C:\Users\USER\.vscode\extensions\church project\youths.html">Learn more></a></div>
+       </div>
+       <br>
+    <br>
+    <br>
+    <br>
+       <div class="women-image" ></div>
+       <div class="card">
+        <h3>Women's ministry</h3>
+        <p>
+        The Women ministry at GTC exists to inspire and<br>
+        empower wemen to grow spiritually through<br>
+        prayer,fellowship,and the teaching of God's <br>
+        Word in a loving and supportive environment.
+            <hr class="line">
+        </p>
+        <div class="visit-btn"><a href="C:\Users\USER\.vscode\extensions\church project\womems ministry.html">Learn more></a></div>
+       </div>
+       <br>
+    <br>
+    <br>
+    <br>
+       <div class="men-image" ></div>
+       <div class="card">
+        <h3>Men's ministry</h3>
+        <p>
+        Men Ministry at GTC offer regular<br>
+        events for men to connect with <br>
+        one another beyond the church setting.
+            <hr class="line">
+        </p>
+        <div class="visit-btn"><a href="C:\Users\USER\.vscode\extensions\church project\mens ministry.html">Learn more></a></div>
+        
+       </div>
+        <br>
+    <br>
+    <br>
+    <br>
+       <div class="prayer-image" ></div>
+       <div class="card">
+        <h3>Prayer Ministry</h3>
+        <p>
+        Our prayer ministry is dedicated to seeking God<br>
+        through prayer,interceding for others,and<br>
+        strengthening the church spiritually through faith<br>
+        and unity.
+            <hr class="line">
+        </p>
+        <div class="visit-btn"><a href="C:\Users\USER\.vscode\extensions\church project\prayer ministry.html">Learn more></a></div>
+       </div>
+        <br>
+    <br>
+    <br>
+    <br>
+       <div class="mission-image" ></div>
+       <div class="card">
+        <h3>Mission</h3>
+        <p>
+        To present people completly in church.
+            <hr class="line">
+        </p>
+        <div class="visit-btn"><a href="C:\Users\USER\.vscode\extensions\church project\mission.html">Learn more></a></div>
+       </div>
+       </section>
+            </body>
+            <!-- FOOTER SECTION -->
+<footer class="footer">
+    <div class="footer-content">
+
+        <h3>Gospel Tabernacle Church - Kinjo</h3>
+        <p>Christ in You, the Hope of Glory</p>
+
+        <div class="footer-links">
+            <a href="kinjo.html">Home</a>
+            <a href="see more.html">About Us</a>
+            <a href="ministries.html">Ministries</a>
+            <a href="visit us.html">Visit Us</a>
+        </div>
+
+        <div class="footer-contact">
+            <p>📍 Kinjo, Kenya</p>
+            <p>📞 +254 711146698</p>
+            <p>✉️ isaackaimenyi@gmail.com</p>
+        </div>
+
+        <p class="copyright">
+            © 2026 Gospel Tabernacle Church - Kinjo. All Rights Reserved.
+        </p>
+
+    </div>
+</footer>
+</html>
